@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Was ist ein Computerprogramm?</title>
+    <link rel="stylesheet" href="Quiz.Computerprogramm.css">
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+</head>
+<body>
+    <h1>Quiz zu Computerprogrammen</h1>
+    <nav class="k-nav">
+        <h2>Inhaltsverzeichnis</h2>
+        <ul class="k-nav-list">
+            <li class="k-nav-item" id="gut-zu-wissen-link"><a href="#gut-zu-wissen" class="k-nav-link">Gut zu wissen</a></li>
+            <li class="k-nav-item" id="quiz-link"><a href="#quiz" class="k-nav-link">Quiz</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="k-erklärung" id="gut-zu-wissen">
+    <h3 class="k-erklärung-title">Gut zu wissen</h3>
+    <p>Ein Computerprogramm ist eine Reihe von Anweisungen, die von einem Computer ausgeführt werden, um eine bestimmte Aufgabe zu erfüllen. Es besteht aus Code, der in einer Programmiersprache geschrieben ist, und kann verschiedene Funktionen ausführen, wie zum Beispiel Daten verarbeiten, Berechnungen durchführen oder Benutzerinteraktionen ermöglichen.</p>
+    <p>Computerprogramme können in verschiedenen Formen vorliegen, wie zum Beispiel als ausführbare Dateien, Skripte oder Apps. Sie sind ein wesentlicher Bestandteil der modernen Technologie und ermöglichen es uns, eine Vielzahl von Aufgaben zu automatisieren und zu vereinfachen.</p>
+    </div>
+    <hr>
+    <div class="k-quiz" id="quiz">
+        <h3 class="k-quiz-title">Quiz</h3>
+        <p class="k-quiz-instruction">Welche der folgenden Aussagen über Computerprogramme ist richtig?</p>
+    <p class="k-quiz-question" id="q-1">Frage 1: Was ist ein Computerprogramm?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="1-option1" name="quiz1" value="1-option1">
+    <label for="1-option1">Die Reihe von Computern, die zu benutzen sind.</label> <br>
+    <input type="radio" id="1-option2" name="quiz1" value="1-option2">
+    <label for="1-option2">Die Anweisungen, die von einem Computer ausgeführt werden.</label><br>
+    <input type="radio" id="1-option3" name="quiz1" value="1-option3">
+    <label for="1-option3">Die Software, die auf einem Computer installiert ist.</label><br>
+    <input type="radio" id="1-option4" name="quiz1" value="1-option4">
+    <label for="1-option4">Die Hardware, die einen Computer ausmacht.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-2">Frage 2: Was zählt NICHT als Programmiersprache?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="2-option1" name="quiz2" value="2-option1">
+    <label for="2-option1">Python</label><br>
+    <input type="radio" id="2-option2" name="quiz2" value="2-option2">
+    <label for="2-option2">JavaScript</label><br>
+    <input type="radio" id="2-option3" name="quiz2" value="2-option3">
+    <label for="2-option3">Java</label><br>
+    <input type="radio" id="2-option4" name="quiz2" value="2-option4">
+    <label for="2-option4">HTML</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-3">Frage 3: Warum sind HTML und CSS KEINE Programmiersprachen?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="3-option1" name="quiz3" value="3-option1">
+    <label for="3-option1">Weil sie nicht über VS Code ausgeführt werden können.</label><br>
+    <input type="radio" id="3-option2" name="quiz3" value="3-option2">
+    <label for="3-option2">Weil HTML eine Designsprache und CSS eine Struktursprache ist, die keine Logik oder Funktionalität bietet.</label><br>
+    <input type="radio" id="3-option3" name="quiz3" value="3-option3">
+    <label for="3-option3">Weil HTML eine Struktursprache und CSS eine Stylesheet-Sprache ist, die keien Logik oder Funktionalität bietet.</label><br>
+    <input type="radio" id="3-option4" name="quiz3" value="3-option4">
+    <label for="3-option4">Definitiv richtige Antwort</label><br>
+    </div> 
+    <br>
+    <p class="k-quiz-question" id="q-4">Frage 4: Welche der folgenden Code-Snippets ist eine Programmiersprache?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="4-option1" name="quiz4" value="4-option1">
+    <label for="4-option1"><code>print("Hello World")</code></label><br>
+    <input type="radio" id="4-option2" name="quiz4" value="4-option2">
+    <label for="4-option2"><code>&lt;p&gt;Hello World&lt;/p&gt;</code></label><br>
+    <input type="radio" id="4-option3" name="quiz4" value="4-option3">
+    <label for="4-option3"><code>body { color: red; }</code></label><br>
+    <input type="radio" id="4-option4" name="quiz4" value="4-option4">
+    <label for="4-option4"><code>&lt;img src="image.jpg"&gt;</code></label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-5">Frage 5: Welche der folgenden Code-Snippets ist KEINE Programmiersprache?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="5-option1" name="quiz5" value="5-option1">
+    <label for="5-option1"><code>print("Hello World")</code></label><br>
+    <input type="radio" id="5-option2" name="quiz5" value="5-option2">
+    <label for="5-option2"><code>console.log("Hello");</code></label><br>
+    <input type="radio" id="5-option3" name="quiz5" value="5-option3">
+    <label for="5-option3"><code>if (true) { console.log("test"); }</code></label><br>
+    <input type="radio" id="5-option4" name="quiz5" value="5-option4">
+    <label for="5-option4"><code>body { color: red; }</code></label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-6">Frage 6: Was ist der Hauptzweck eines Algorithmus in einem Computerprogramm?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="6-option1" name="quiz6" value="6-option1">
+    <label for="6-option1">Eine Reihe von Schritten, die ein Problem lösen.</label><br>
+    <input type="radio" id="6-option2" name="quiz6" value="6-option2">
+    <label for="6-option2">Die grafische Darstellung eines Programms.</label><br>
+    <input type="radio" id="6-option3" name="quiz6" value="6-option3">
+    <label for="6-option3">Die Speicherung von Daten auf der Festplatte.</label><br>
+    <input type="radio" id="6-option4" name="quiz6" value="6-option4">
+    <label for="6-option4">Die Verbindung zu einem Netzwerk.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-7">Frage 7: Welche Programmiersprache wird hauptsächlich für die Webentwicklung auf der Client-Seite verwendet?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="7-option1" name="quiz7" value="7-option1">
+    <label for="7-option1">Python</label><br>
+    <input type="radio" id="7-option2" name="quiz7" value="7-option2">
+    <label for="7-option2">JavaScript</label><br>
+    <input type="radio" id="7-option3" name="quiz7" value="7-option3">
+    <label for="7-option3">C++</label><br>
+    <input type="radio" id="7-option4" name="quiz7" value="7-option4">
+    <label for="7-option4">SQL</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-8">Frage 8: Was bedeutet "kompilieren" bei Programmiersprachen?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="8-option1" name="quiz8" value="8-option1">
+    <label for="8-option1">Den Code in Maschinensprache übersetzen, bevor er ausgeführt wird.</label><br>
+    <input type="radio" id="8-option2" name="quiz8" value="8-option2">
+    <label for="8-option2">Den Code direkt im Browser interpretieren.</label><br>
+    <input type="radio" id="8-option3" name="quiz8" value="8-option3">
+    <label for="8-option3">Den Code in eine Datenbank speichern.</label><br>
+    <input type="radio" id="8-option4" name="quiz8" value="8-option4">
+    <label for="8-option4">Den Code in eine andere Programmiersprache konvertieren.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-9">Frage 9: Welches Element ist KEIN grundlegender Bestandteil eines Computerprogramms?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="9-option1" name="quiz9" value="9-option1">
+    <label for="9-option1">Variablen</label><br>
+    <input type="radio" id="9-option2" name="quiz9" value="9-option2">
+    <label for="9-option2">Schleifen</label><br>
+    <input type="radio" id="9-option3" name="quiz9" value="9-option3">
+    <label for="9-option3">Hardware-Komponenten</label><br>
+    <input type="radio" id="9-option4" name="quiz9" value="9-option4">
+    <label for="9-option4">Funktionen</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-10">Frage 10: Was ist ein "Bug" in einem Computerprogramm?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="10-option1" name="quiz10" value="10-option1">
+    <label for="10-option1">Ein Fehler, der das Programm nicht korrekt funktionieren lässt.</label><br>
+    <input type="radio" id="10-option2" name="quiz10" value="10-option2">
+    <label for="10-option2">Eine zusätzliche Funktion.</label><br>
+    <input type="radio" id="10-option3" name="quiz10" value="10-option3">
+    <label for="10-option3">Eine Sicherheitsmaßnahme.</label><br>
+    <input type="radio" id="10-option4" name="quiz10" value="10-option4">
+    <label for="10-option4">Eine Art von Variable.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-11">Frage 11: Welche Art von Programmiersprache wird zur Datenanalyse und maschinellem Lernen häufig verwendet?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="11-option1" name="quiz11" value="11-option1">
+    <label for="11-option1">JavaScript</label><br>
+    <input type="radio" id="11-option2" name="quiz11" value="11-option2">
+    <label for="11-option2">Python</label><br>
+    <input type="radio" id="11-option3" name="quiz11" value="11-option3">
+    <label for="11-option3">HTML</label><br>
+    <input type="radio" id="11-option4" name="quiz11" value="11-option4">
+    <label for="11-option4">CSS</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-12">Frage 12: Was ist der Unterschied zwischen einer "Variablen" und einer "Konstante" in einem Programm?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="12-option1" name="quiz12" value="12-option1">
+    <label for="12-option1">Eine Variable kann sich ändern, eine Konstante nicht.</label><br>
+    <input type="radio" id="12-option2" name="quiz12" value="12-option2">
+    <label for="12-option2">Eine Konstante kann sich ändern, eine Variable nicht.</label><br>
+    <input type="radio" id="12-option3" name="quiz12" value="12-option3">
+    <label for="12-option3">Beide sind immer gleich.</label><br>
+    <input type="radio" id="12-option4" name="quiz12" value="12-option4">
+    <label for="12-option4">Kein Unterschied.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-13">Frage 13: Welche Schleife wird verwendet, um Code so lange zu wiederholen, bis eine Bedingung erfüllt ist?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="13-option1" name="quiz13" value="13-option1">
+    <label for="13-option1">For-Schleife</label><br>
+    <input type="radio" id="13-option2" name="quiz13" value="13-option2">
+    <label for="13-option2">While-Schleife</label><br>
+    <input type="radio" id="13-option3" name="quiz13" value="13-option3">
+    <label for="13-option3">If-Anweisung</label><br>
+    <input type="radio" id="13-option4" name="quiz13" value="13-option4">
+    <label for="13-option4">Switch-Anweisung</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-14">Frage 14: Was ist "Debugging" in der Programmierung?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="14-option1" name="quiz14" value="14-option1">
+    <label for="14-option1">Das Schreiben neuen Codes.</label><br>
+    <input type="radio" id="14-option2" name="quiz14" value="14-option2">
+    <label for="14-option2">Das Finden und Beheben von Fehlern im Code.</label><br>
+    <input type="radio" id="14-option3" name="quiz14" value="14-option3">
+    <label for="14-option3">Das Kompilieren des Programms.</label><br>
+    <input type="radio" id="14-option4" name="quiz14" value="14-option4">
+    <label for="14-option4">Das Ausführen des Programms im Browser.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-15">Frage 15: Welche Programmiersprache ist bekannt für ihre Verwendung in der Spieleentwicklung und Leistung?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="15-option1" name="quiz15" value="15-option1">
+    <label for="15-option1">Ruby</label><br>
+    <input type="radio" id="15-option2" name="quiz15" value="15-option2">
+    <label for="15-option2">C++</label><br>
+    <input type="radio" id="15-option3" name="quiz15" value="15-option3">
+    <label for="15-option3">PHP</label><br>
+    <input type="radio" id="15-option4" name="quiz15" value="15-option4">
+    <label for="15-option4">R</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-16">Frage 16: Was ist eine Funktion in der Programmierung?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="16-option1" name="quiz16" value="16-option1">
+    <label for="16-option1">Ein Block von Code, der eine bestimmte Aufgabe ausführt.</label><br>
+    <input type="radio" id="16-option2" name="quiz16" value="16-option2">
+    <label for="16-option2">Eine Variable.</label><br>
+    <input type="radio" id="16-option3" name="quiz16" value="16-option3">
+    <label for="16-option3">Eine Schleife.</label><br>
+    <input type="radio" id="16-option4" name="quiz16" value="16-option4">
+    <label for="16-option4">Ein Kommentar.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-17">Frage 17: Welche Sprache wird für Datenbanken verwendet?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="17-option1" name="quiz17" value="17-option1">
+    <label for="17-option1">SQL</label><br>
+    <input type="radio" id="17-option2" name="quiz17" value="17-option2">
+    <label for="17-option2">Python</label><br>
+    <input type="radio" id="17-option3" name="quiz17" value="17-option3">
+    <label for="17-option3">JavaScript</label><br>
+    <input type="radio" id="17-option4" name="quiz17" value="17-option4">
+    <label for="17-option4">HTML</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-18">Frage 18: Was ist "Versionierung" in der Softwareentwicklung?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="18-option1" name="quiz18" value="18-option1">
+    <label for="18-option1">Das Verwalten verschiedener Versionen eines Programms.</label><br>
+    <input type="radio" id="18-option2" name="quiz18" value="18-option2">
+    <label for="18-option2">Das Kompilieren.</label><br>
+    <input type="radio" id="18-option3" name="quiz18" value="18-option3">
+    <label for="18-option3">Das Debuggen.</label><br>
+    <input type="radio" id="18-option4" name="quiz18" value="18-option4">
+    <label for="18-option4">Das Ausführen.</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-19">Frage 19: Welche Programmiersprache ist objektorientiert?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="19-option1" name="quiz19" value="19-option1">
+    <label for="19-option1">Java</label><br>
+    <input type="radio" id="19-option2" name="quiz19" value="19-option2">
+    <label for="19-option2">HTML</label><br>
+    <input type="radio" id="19-option3" name="quiz19" value="19-option3">
+    <label for="19-option3">CSS</label><br>
+    <input type="radio" id="19-option4" name="quiz19" value="19-option4">
+    <label for="19-option4">SQL</label><br>
+    </div>
+    <br>
+    <p class="k-quiz-question" id="q-20">Frage 20: Was ist ein "Framework" in der Programmierung?</p>
+    <div class="k-quiz-options">
+    <input type="radio" id="20-option1" name="quiz20" value="20-option1">
+    <label for="20-option1">Eine vorgefertigte Struktur für die Entwicklung.</label><br>
+    <input type="radio" id="20-option2" name="quiz20" value="20-option2">
+    <label for="20-option2">Ein Fehler.</label><br>
+    <input type="radio" id="20-option3" name="quiz20" value="20-option3">
+    <label for="20-option3">Eine Variable.</label><br>
+    <input type="radio" id="20-option4" name="quiz20" value="20-option4">
+    <label for="20-option4">Eine Schleife.</label><br>
+    </div>
+    <br>
+    <button type="button" onclick="checkAnswers()" class="k-quiz-button">Antworten überprüfen</button>
+    </div>
+
+    <script src="Quiz.Computerprogramm.js">
+    </script>
+    <footer>
+        <hr>
+        <p>Quiz erstellt von: Mustafa M.</p>
+        <p>GitHub: <a href="https://github.com/ychw1" target="_blank">Ychw1</a></p>
+        <p>Ja, das <strong>IST</strong> tuff.</p>
+    </footer>
+</body>
+    
+</html>

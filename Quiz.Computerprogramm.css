@@ -5,9 +5,9 @@ body {background-color: lightgrey;}
 .k-nav-link:active {color:aquamarine; text-decoration: none;}
 .k-nav-link:focus {color:cadetblue;text-decoration: none;}
 h1 {text-align: center; font-family: Arial, Helvetica, sans-serif; font-style: italic; padding-bottom: 15px;}
-nav {background-color:white; padding: 5px; border-radius: 10px; margin: 4px; text-align: center; width: 25%; margin-left: auto; margin-right: auto; font-family: 'Courier New', Courier, monospace;}
+nav {background-color:white; padding: 5px; border-radius: 10px; margin: 4px; text-align: center; width: 50%; margin-left: auto; margin-right: auto; font-family: 'Courier New', Courier, monospace;}
 h2 {color:grey; margin-top: 0;}
-.k-nav-item {display: block; margin: 0 10px;}
+.k-nav-item {display: block; margin: 10px 10px;}
 .k-nav-list {list-style-type: none; padding: 0; margin: 0;}
 #quiz-link {padding-bottom: 5px;}
 #gut-zu-wissen {background: radial-gradient(ellipse, black 90%, lightgrey 100%); color:green; margin: 10px; border-radius: 15px; width: 50%; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; }
@@ -18,6 +18,7 @@ h2 {color:grey; margin-top: 0;}
 .k-quiz-question {margin-top: 20px; font-weight: bold;}
 .k-quiz-options {text-align: left; display: inline-block; margin-top: 10px;}
 hr {padding: 3px 0px; border: 2px solid rgba(128,128,128,0.3); background-color: rgba(128,128,128,0.3); border-radius: 10px; margin: 10px 0px;}
-.k-quiz-button {background-color: white; border: 2px solid black; border-radius: 5px; padding: 10px 20px; font-size: larger; cursor: pointer;}
-.k-quiz-button:hover {background-color: black; color: white;}
+.k-quiz-button {background-color: white; border: 2px solid black; border-radius: 5px; padding: 10px 20px; font-size: larger; cursor: pointer; margin-top: 50px;}
+.k-quiz-button:hover {background-color: lightgrey; color:black;}
+.k-quiz-button:active {background-color:gray ; color:white;}
 footer {text-align: center; padding: 10px; font-size: smaller; color: grey;}
